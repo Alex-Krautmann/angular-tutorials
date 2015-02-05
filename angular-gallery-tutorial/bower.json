@@ -1,0 +1,10 @@
+{
+  "name": "modular-angular-hello-world",
+  "version": "1.0.0",
+  "dependencies": {
+    "bootstrap": "latest",
+    "angular": "latest",
+    "angular-bootstrap": "latest",
+    "angular-route": "latest"
+  }
+}

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <base href="/">
+
+        <title>Angular Gallery App</title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="assets/libs/bootstrap/dist/css/bootstrap.min.css">
+
+        <!-- JS -->
+        <script src="assets/libs/angular/angular.min.js"></script>
+        <script src="assets/libs/angular-route/angular-route.min.js"></script>
+        <script src="assets/libs/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+
+        <!-- ANGULAR CUSTOM -->
+        <script src="app/appModules.js"></script>
+        <script src="app/appRoutes.js"></script>
+        <script src="app/modules/home/HomeController.js"></script>
+        <script src="app/modules/gallery/GalleryController.js"></script>
+
+    </head>
+    <body ng-app="AngularGalleryApp">
+        <!-- HEADER -->
+        <nav class="navbar navbar-default">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/"><label>Angular Gallery App</label></a>
+            </div>
+
+            <ul class="nav navbar-nav">
+                <ul class="nav navbar-nav">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/gallery">Gallery</a></li>
+                </ul>
+            </ul>
+        </nav>
+
+        <!-- ANGULAR DYNAMIC CONTENT -->
+        <div ng-view></div>
+    </body>
+</html>
